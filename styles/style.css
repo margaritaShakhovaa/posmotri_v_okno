@@ -49,11 +49,10 @@ ol {
 }
 
 .result {
-  margin-top: 86px;
-  inline-size: 711px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 86px;
 }
 
 .result__video-container {
@@ -86,7 +85,7 @@ ol {
 }
 
 .search-form__label {
-  width: fit-content;
+  inline-size: fit-content;
   display: flex;
   align-items: center;
   padding: 0 1px;
@@ -108,10 +107,9 @@ ol {
 }
 
 .search-form__textfield {
-  cursor: pointer;
+  inline-size: 226px;
+  block-size: 27px;
   appearance: none;
-  width: 226px;
-  height: 27px;
   font-family: inherit;
   font-weight: 400;
   font-size: inherit;
@@ -120,6 +118,7 @@ ol {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  cursor: pointer;
 }
 
 .search-form__textfield:focus {
@@ -149,32 +148,33 @@ ol {
   display: inline-block;
   margin-right: 1px;
   vertical-align: middle;
-  width: 19px;
-  height: 19px;
+  inline-size: 19px;
+  block-size: 19px;
   background-color: inherit;
-  border: #fff 1px solid;
+  border: 1px solid #fff;
   cursor: pointer;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
-  top: 1px;
-  left: 1px;
-  background-color: #fff;
-  width: 15px;
-  height: 15px;
+  inset-block-start: 1px;
+  inset-inline-start: 1px;
+  inline-size: 15px;
+  block-size: 15px;
   position: relative;
+  background-color: #fff;
 }
 
 .button {
-  cursor: pointer;
+  font-family: inherit;
   color: inherit;
   font-size: inherit;
   background-color: inherit;
   text-align: center;
   font-weight: 700;
-  border: #fff 1px solid;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
 
 .button:active {
@@ -190,7 +190,7 @@ ol {
 }
 
 .button:focus-visible {
-  outline: #fff 1px solid;
+  outline: 1px solid #fff;
 }
 
 .search-form__submit-button {
@@ -204,16 +204,17 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   gap: 19px;
+  block-size: 534px;
 }
 
 .title {
   margin-top: 10px;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'Oswald', sans-serif;
 }
 
 .content__accent {
@@ -234,7 +235,7 @@ ol {
 }
 
 .content__list-item:last-of-type {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .content__card-link {
@@ -261,7 +262,7 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  outline: 1px #fff solid;
+  outline: 1px solid #fff;
 }
 
 .content__video-card {
@@ -300,8 +301,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
   align-self: center;
 }
@@ -309,4 +310,5 @@ ol {
 .more-button {
   inline-size: 399px;
   block-size: 34px;
+  margin: 1px;
 }
