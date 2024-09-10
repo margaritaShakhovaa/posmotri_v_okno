@@ -23,4 +23,4 @@
 2. Верстка форм и их различных состояний с применением псевдоклассов и псевдоэлементов
 
 ** Ссылка на проект **
-* [Посмотри в окно](https://github.com/margaritaShakhovaa/posmotri_v_okno)
+https://github.com/margaritaShakhovaa/posmotri_v_okno
