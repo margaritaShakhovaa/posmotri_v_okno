@@ -46,11 +46,10 @@ ol {
   display: flex;
   justify-content: space-between;
   gap: 28px;
-  margin-top: 118px;
 }
 
 .result {
-  margin-top: 94px;
+  margin-top: 86px;
   inline-size: 711px;
   display: flex;
   flex-direction: column;
@@ -208,7 +207,7 @@ ol {
 }
 
 .title {
-  margin-top: 18px;
+  margin-top: 10px;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
