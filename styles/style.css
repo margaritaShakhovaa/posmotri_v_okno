@@ -1,3 +1,8 @@
+:root {
+  --fira-font-face: 'Fira Sans Condensed', sans-serif;
+  --oswald-font-face: 'Oswald', sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -13,7 +18,7 @@ html {
   block-size: 100%;
   margin: 0 auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: var(--fira-font-face);
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -38,8 +43,11 @@ ol {
 }
 
 .preloader {
-  position: absolute;
-  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .content {
