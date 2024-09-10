@@ -10,7 +10,10 @@ html {
 
 .page {
   inline-size: 1200px;
-  margin: 0 auto;
+  block-size: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -37,25 +40,26 @@ ol {
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
   inline-size: 1140px;
-  gap: 29px;
-  margin: 133px auto 0;
+  block-size: 534px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 118px;
 }
 
 .result {
+  margin-top: 94px;
+  inline-size: 711px;
   display: flex;
   flex-direction: column;
-  margin-top: 79px;
+  gap: 15px;
 }
 
 .result__video-container {
   inline-size: 711px;
   block-size: 386px;
   position: relative;
-  margin-bottom: 15px;
 }
 
 .result__video {
@@ -67,7 +71,6 @@ ol {
 
 .search-form {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   gap: 36px;
 }
@@ -199,13 +202,12 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  min-block-size: 386px;
-  align-self: flex-start;
-  gap: 20px;
+  flex-grow: 1;
+  gap: 19px;
 }
 
 .title {
-  padding-top: 2px;
+  margin-top: 18px;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -219,11 +221,20 @@ ol {
 }
 
 .content__list {
-  inline-size: 399px;
-  block-size: 298px;
+  min-block-size: 298px;
   overflow: scroll;
   position: relative;
-  margin-top: 1px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.content__list-item {
+  margin-bottom: 27px;
+}
+
+.content__list-item:last-of-type {
+  margin: 0;
 }
 
 .content__card-link {
@@ -255,11 +266,9 @@ ol {
 
 .content__video-card {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 394px;
-  height: 107px;
-  margin-bottom: 30px;
+  align-items: flex-start;
+  inline-size: 100%;
+  block-size: 107px;
 }
 
 .content__video-card-description-container {
