@@ -102,6 +102,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__label-text {
@@ -183,6 +184,7 @@ ol {
   font-weight: 700;
   border: 1px solid #fff;
   cursor: pointer;
+  padding: 6px 0;
 }
 
 .button:active {
@@ -200,11 +202,11 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
   inline-size: 194px;
-  block-size: 34px;
   align-self: end;
 }
 
@@ -231,7 +233,7 @@ ol {
 }
 
 .content__list {
-  min-block-size: 298px;
+  min-block-size: 302px;
   overflow: auto;
   position: relative;
   display: flex;
@@ -291,6 +293,7 @@ ol {
 
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
+  max-width: 200px;
   font-weight: 700;
   font-size: 30px;
   text-overflow: ellipsis;
@@ -304,20 +307,22 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   line-height: 90%;
+  max-inline-size: 200px;
+  max-block-size: 65px;
   text-overflow: ellipsis;
   overflow: hidden;
   padding-inline-start: 2px;
 }
 
 .content__video-card-thumbnail {
-  inline-size: 194px;
+  inline-size: 195px;
   block-size: 103px;
   object-fit: cover;
   align-self: center;
 }
 
 .more-button {
-  inline-size: 399px;
-  block-size: 34px;
-  margin: 1px;
+  inline-size: 397px;
+  padding: 5px 0 6px;
+  margin: 0 2px 2px;
 }
